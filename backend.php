@@ -31,10 +31,9 @@ class QMusicAPI{
         curl_close($ch);
         //$output = json_decode($output,true);
         return $output;
-}
+    }
 
-
-function curlpost($url,$data){
+    function curlpost($url,$data){
         $data  = json_encode($data);    
         $headerArray =array("Content-type:application/json;charset='utf-8'","Accept:application/json");
         $curl = curl_init();
@@ -49,7 +48,7 @@ function curlpost($url,$data){
         curl_close($curl);
         //return json_decode($output，true);
         return $output;
-}
+    }
     
     
     
@@ -63,10 +62,7 @@ function curlpost($url,$data){
     }
 
     public function geturl($filename){
-        //$url='';
-        //return $this->curlget($url);
         return 'Write your code or support genuine music';
-       
     }
     public function search($searchword,$page,$searchnum){
         $url='https://c.y.qq.com/soso/fcgi-bin/client_search_cp?';
@@ -86,7 +82,7 @@ function curlpost($url,$data){
     public function songlist($playlist_id,$musicnum,$uid){
         $url='https://c.y.qq.com/qzone/fcg-bin/fcg_ucc_getcdinfo_byids_cp.fcg?type=1&json=1&utf8=1&onlysong=0&song_begin=0&song_num='.$musicnum.'&disstid='.$playlist_id.'&loginUin='.$uid.'&hostUin=0&format=json&inCharset=utf8&outCharset=utf-8&notice=0&platform=yqq.json&needNewCode=0';
         
-        return substr($this->curlget($url),1,0);    //去除空格
+        return substr($this->curlget($url),1);    //去除空格
     }
 
     public function GetSonglistCreatorUid($playlist_id){

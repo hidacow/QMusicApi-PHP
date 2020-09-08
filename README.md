@@ -61,7 +61,7 @@ You can open the QQ/Wechat/Alipay app and scan the QR code in [This Webpage](htt
 `num`: 可选，一页返回项目数量，默认`30`
 
 
-示例：[?method=Search&key=周杰伦](http://a.hk08.horainwebs.top/?method=Search&key=周杰伦)
+示例：[?method=Search&keyword=周杰伦](http://a.hk08.horainwebs.top/?method=Search&keyword=周杰伦)
 
 ### 获取歌词
 
@@ -106,7 +106,9 @@ You can open the QQ/Wechat/Alipay app and scan the QR code in [This Webpage](htt
 
 参数：
 
-无
+`id`: 必填，歌单的disstid
+
+示例：[?method=GetSonglistCreatorUid&id=7001048679](http://a.hk08.horainwebs.top/?method=GetSonglistCreatorUid&id=7001048679)
 
 ### 获取歌手歌曲列表
 
