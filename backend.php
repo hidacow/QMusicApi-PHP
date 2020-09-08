@@ -82,7 +82,7 @@ class QMusicAPI{
     public function songlist($playlist_id,$musicnum,$uid){
         $url='https://c.y.qq.com/qzone/fcg-bin/fcg_ucc_getcdinfo_byids_cp.fcg?type=1&json=1&utf8=1&onlysong=0&song_begin=0&song_num='.$musicnum.'&disstid='.$playlist_id.'&loginUin='.$uid.'&hostUin=0&format=json&inCharset=utf8&outCharset=utf-8&notice=0&platform=yqq.json&needNewCode=0';
         
-        return substr($this->curlget($url),1);    //去除空格
+        return $this->curlget($url);    //去除空格
     }
 
     public function GetSonglistCreatorUid($playlist_id){
