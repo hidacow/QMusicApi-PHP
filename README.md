@@ -25,7 +25,7 @@ A simple API Framework unlocking exclusive power of Tencent Music
 PHP 5.4+ and Curl, OpenSSL extension installed.
 
 ## Demo Site
-`http://wxw73i2814.hk11.horainwebs.top/`
+`http://a.hk08.horainwebs.top/`
 
 ## Donate
 You can open the QQ/Wechat/Alipay app and scan the QR code in [This Webpage](https://ivip.tech/jz.html)
@@ -45,7 +45,7 @@ You can open the QQ/Wechat/Alipay app and scan the QR code in [This Webpage](htt
 
 > **支持正版音乐，不提供本段代码**
 
-示例：[?method=GetSURL&key=QM&fn=F000001glaI72k8BQX.flac](http://wxw73i2814.hk11.horainwebs.top/?method=GetSURL&key=QM&fn=F000001glaI72k8BQX.flac)
+示例：[?method=GetSURL&key=QM&fn=F000001glaI72k8BQX.flac](http://a.hk08.horainwebs.top/?method=GetSURL&key=QM&fn=F000001glaI72k8BQX.flac)
 
 
 ### 搜索
@@ -61,7 +61,7 @@ You can open the QQ/Wechat/Alipay app and scan the QR code in [This Webpage](htt
 `num`: 可选，一页返回项目数量，默认`30`
 
 
-示例：`?method=Search&key=周杰伦`
+示例：[?method=Search&key=周杰伦](http://a.hk08.horainwebs.top/?method=Search&key=周杰伦)
 
 ### 获取歌词
 
@@ -77,7 +77,7 @@ You can open the QQ/Wechat/Alipay app and scan the QR code in [This Webpage](htt
 
 `raw`: 可选，若值为`1`则返回QQ音乐API原版JSON格式，默认`0`
 
-示例：[?method=GetLyric&songmid=001glaI72k8BQX&raw=1](http://wxw73i2814.hk11.horainwebs.top/?method=GetLyric&songmid=001glaI72k8BQX&raw=1)
+示例：[?method=GetLyric&songmid=001glaI72k8BQX&raw=1](http://a.hk08.horainwebs.top/?method=GetLyric&songmid=001glaI72k8BQX&raw=1)
 
 
 
@@ -97,7 +97,7 @@ You can open the QQ/Wechat/Alipay app and scan the QR code in [This Webpage](htt
 
             若值为`2`则不获取（适用于公开歌单，提高数据获取速度，减轻服务器压力）
 
-示例：[?method=GetSonglistById&id=7001048679](http://wxw73i2814.hk11.horainwebs.top/?method=GetSonglistById&id=7001048679)
+示例：[?method=GetSonglistById&id=7001048679](http://a.hk08.horainwebs.top/?method=GetSonglistById&id=7001048679)
 
 
 ### 获取歌单创建者的uid
@@ -130,7 +130,7 @@ You can open the QQ/Wechat/Alipay app and scan the QR code in [This Webpage](htt
 
  > 若`singermid`与`singerid`参数同时传入则`singerid`参数失效
 
-示例：[?method=GetSinger&singermid=0025NhlN2yWrP4](http://wxw73i2814.hk11.horainwebs.top/?method=GetSinger&singermid=0025NhlN2yWrP4)
+示例：[?method=GetSinger&singermid=0025NhlN2yWrP4](http://a.hk08.horainwebs.top/?method=GetSinger&singermid=0025NhlN2yWrP4)
 
 ### 获取专辑歌曲列表
 
@@ -146,7 +146,7 @@ You can open the QQ/Wechat/Alipay app and scan the QR code in [This Webpage](htt
 
 该接口将一次性返回所有专辑内的歌曲
 
-示例：[?method=GetAlbum&albummid=0009C3rp3Kfwg0](http://wxw73i2814.hk11.horainwebs.top/?method=GetAlbum&albummid=0009C3rp3Kfwg0)
+示例：[?method=GetAlbum&albummid=0009C3rp3Kfwg0](http://a.hk08.horainwebs.top/?method=GetAlbum&albummid=0009C3rp3Kfwg0)
 
 ### 获取MV/视频播放地址
 
@@ -162,7 +162,7 @@ You can open the QQ/Wechat/Alipay app and scan the QR code in [This Webpage](htt
 
 `redir`: 可选，若值为`1`则自动跳转，默认`0`
 
-示例：[?method=GetMVURL&vid=q0034sb9eru&quality=4](http://wxw73i2814.hk11.horainwebs.top/?method=GetMVURL&vid=q0034sb9eru&quality=4)
+示例：[?method=GetMVURL&vid=q0034sb9eru&quality=4](http://a.hk08.horainwebs.top/?method=GetMVURL&vid=q0034sb9eru&quality=4)
 
 ### 获取单曲信息
 
@@ -176,7 +176,7 @@ You can open the QQ/Wechat/Alipay app and scan the QR code in [This Webpage](htt
 
  > 若`songmid`与`songid`参数同时传入则`songid`参数失效
 
-示例：[?method=GetSongDetail&songmid=001glaI72k8BQX](http://wxw73i2814.hk11.horainwebs.top/?method=GetSongDetail&songmid=001glaI72k8BQX)
+示例：[?method=GetSongDetail&songmid=001glaI72k8BQX](http://a.hk08.horainwebs.top/?method=GetSongDetail&songmid=001glaI72k8BQX)
 
 ### 获取数字专辑信息/配置
 
@@ -194,7 +194,7 @@ You can open the QQ/Wechat/Alipay app and scan the QR code in [This Webpage](htt
 
 若传入非数字专辑的mid或id则会返回`Err getting config. Is it a digital album on sale?`
 
-示例：[?method=GetDigitalAlbumConfig&albummid=0009C3rp3Kfwg0](http://wxw73i2814.hk11.horainwebs.top/?method=GetDigitalAlbumConfig&albummid=0009C3rp3Kfwg0)
+示例：[?method=GetDigitalAlbumConfig&albummid=0009C3rp3Kfwg0](http://a.hk08.horainwebs.top/?method=GetDigitalAlbumConfig&albummid=0009C3rp3Kfwg0)
 
 ### 获取排行榜索引
 
@@ -220,4 +220,4 @@ You can open the QQ/Wechat/Alipay app and scan the QR code in [This Webpage](htt
 
 `num`: 可选，返回项目的最大数量，默认`100`
 
-示例：[?method=GetToplist&topid=129&updatekey=2020_1&type=global](http://wxw73i2814.hk11.horainwebs.top/?method=GetToplist&topid=129&updatekey=2020_1&type=global)
+示例：[?method=GetToplist&topid=129&updatekey=2020_1&type=global](http://a.hk08.horainwebs.top/?method=GetToplist&topid=129&updatekey=2020_1&type=global)
